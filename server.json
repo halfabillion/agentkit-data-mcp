@@ -1,7 +1,20 @@
 {
-  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.halfabillion/agentkit-data-mcp",
-  "description": "Pay-per-call web-to-Markdown, Solana/Base token risk, wallet balances and spot prices over x402 (USDC on Base).",
+  "title": "AgentKit Data",
+  "description": "Pay-per-call web-to-Markdown, Solana/Base token risk, wallet balances and spot prices over x402.",
   "version": "0.1.0",
-  "repository": { "url": "https://github.com/halfabillion/agentkit-data-mcp", "source": "github" }
+  "repository": { "url": "https://github.com/halfabillion/agentkit-data-mcp", "source": "github" },
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "agentkit-data-mcp",
+      "version": "0.1.0",
+      "transport": { "type": "stdio" },
+      "environmentVariables": [
+        { "name": "AGENTKIT_PAYER_KEY", "description": "Base wallet private key holding a little USDC, used to sign x402 payments", "isRequired": true, "isSecret": true },
+        { "name": "AGENTKIT_MAX_USD", "description": "Hard per-call spend cap in USD (default 0.05)", "isRequired": false }
+      ]
+    }
+  ]
 }

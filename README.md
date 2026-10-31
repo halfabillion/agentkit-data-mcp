@@ -20,7 +20,7 @@ Before anything is signed, the server reads the live price from the API's 402 qu
   "mcpServers": {
     "agentkit-data": {
       "command": "npx",
-      "args": ["-y", "github:halfabillion/agentkit-data-mcp"],
+      "args": ["-y", "agentkit-data-mcp"],
       "env": { "AGENTKIT_PAYER_KEY": "0x<base wallet key holding a little USDC>", "AGENTKIT_MAX_USD": "0.05" }
     }
   }
