@@ -1,0 +1,7 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.halfabillion/agentkit-data-mcp",
+  "description": "Pay-per-call web-to-Markdown, Solana/Base token risk, wallet balances and spot prices over x402 (USDC on Base).",
+  "version": "0.1.0",
+  "repository": { "url": "https://github.com/halfabillion/agentkit-data-mcp", "source": "github" }
+}
