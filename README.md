@@ -44,3 +44,12 @@ You can also call the endpoints directly with any x402 client. See `/.well-known
 `npm test` covers 8 tests: input validation, the cap being enforced before signing, and the MCP stdio tool listing.
 
 MIT licensed.
+
+## Docker
+
+```bash
+docker build -t agentkit-data-mcp .
+docker run -i --rm -e AGENTKIT_PAYER_KEY=0x... -e AGENTKIT_MAX_USD=0.05 agentkit-data-mcp
+```
+
+Tools are listed without a key; the key is only needed for paid calls.
